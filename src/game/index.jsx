@@ -47,7 +47,7 @@ const Game = () => {
       return acc + (card.clicked ? 1 : 0)
     }, 0)}</div>
     {
-      cards.map(card => <Card src={card.image} onClick={() => clickCard(card.id)} />)
+      cards.map(card => <Card src={card.image} key={card.alt} alt={card.alt} onClick={() => clickCard(card.id)} />)
     }
   </div>
 }

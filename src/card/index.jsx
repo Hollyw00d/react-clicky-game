@@ -1,7 +1,5 @@
 import React from 'react'
 
-export default function Card({ src, onClick }) {
+const Card = ({ src, onClick, alt }) => <img src={src} onClick={onClick} alt={alt} />
 
-  return <img src={src} onClick={onClick} />
-
-}
+export default Card

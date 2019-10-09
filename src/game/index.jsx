@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../card';
-
 import data from '../data/cards';
 
 function shuffle(a) {

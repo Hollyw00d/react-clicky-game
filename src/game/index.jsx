@@ -11,8 +11,11 @@ function shuffle(a) {
     return a;
 }
 
-export default function Game() {
-  const [cards, setCards] = useState([])
+const Game = () => {
+  const [cards, setCards] = useState([]) // [ [], (arg0) => {} ]
+  //const state = useState([]) // [ [], (arg0) => {} ]
+  //const cards = state[0]
+  //const setCards = state[1]
 
   useEffect(() => {
     reset()
@@ -48,3 +51,5 @@ export default function Game() {
     }
   </div>
 }
+
+export default Game
